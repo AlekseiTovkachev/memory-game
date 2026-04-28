@@ -91,6 +91,6 @@ How do you know when you're done?
 
 Any technical requirements or limitations?
 
-- **Must use:** _e.g., Claude API, specific framework_
-- **Must not use:** _e.g., no paid APIs besides Claude_
+- **Must use:** _e.g., OpenAI API, Claude API, specific framework_
+- **Must not use:** _e.g., no paid APIs besides the selected AI provider_
 - **Must run on:** _e.g., browser, mobile, server_

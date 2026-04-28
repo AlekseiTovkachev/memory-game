@@ -12,7 +12,7 @@
 | **Frontend** | | |
 | **Backend** | | |
 | **Database** | | |
-| **AI/LLM** | Claude API (Anthropic) | Course requirement |
+| **AI/LLM** | OpenAI API and/or Claude API | Choose per feature; keep provider-specific code behind an adapter |
 | **Hosting** | | |
 
 ---
@@ -29,7 +29,7 @@ Example:
       ▼
   API Server (Node/Python)
       │
-      ├── Claude API (AI features)
+      ├── OpenAI API or Claude API (AI features)
       │
       └── Database (data storage)
 ```

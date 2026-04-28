@@ -1,11 +1,10 @@
-# {{PROJECT_NAME}} — Claude Code Project Context
+# {{PROJECT_NAME}} — Codex Project Context
 
 > **Stack:** {{TECH_STACK}}
 > **Purpose:** {{PROJECT_DESCRIPTION}}
 >
-> This file is auto-loaded by Claude Code CLI when you open this project directory.
-> It is the source of truth for Claude's project awareness.
-> Codex uses the parallel `CODEX.md` file.
+> This is the Codex project context file.
+> `CLAUDE.md` is the parallel Claude project context file. Keep both in sync when project commands, structure, or standards change.
 
 ---
 
@@ -59,19 +58,19 @@ A FEATURE IS "DONE" ONLY WHEN:
 
 ```
 {{PROJECT_NAME}}/
-├── CLAUDE.md                # This file — project context for Claude
-├── CODEX.md                 # Parallel project context for Codex
+├── CODEX.md                 # Project context for Codex
+├── CLAUDE.md                # Parallel Claude project context
 ├── AGENTS.md                # Role definitions (CTO, DEV, QA)
 ├── README.md                # Project README
 ├── .env.example             # Environment variables template
 ├── playwright.config.ts     # Playwright E2E configuration
 │
-├── .claude/
-│   ├── settings.local.json  # Tool permissions for Claude
-│   └── commands/            # Slash commands
-│
 ├── .codex/
 │   └── commands/            # Codex role and workflow prompts
+│
+├── .claude/
+│   ├── settings.local.json  # Tool permissions for Claude
+│   └── commands/            # Claude slash commands
 │
 ├── backend/
 │   ├── AGENTS.md            # Backend domain rules
@@ -108,26 +107,28 @@ A FEATURE IS "DONE" ONLY WHEN:
 
 ## 5. Environment Variables
 
-Copy `.env.example` → `.env`. Add the keys for the providers your app uses:
+Copy `.env.example` → `.env`. Required if the app uses OpenAI:
 
 ```
-OPENAI_API_KEY=sk-...                  # OpenAI API key, if using OpenAI features
-OPENAI_MODEL={{OPENAI_MODEL}}          # OpenAI model chosen for the app
-ANTHROPIC_API_KEY=sk-ant-...      # Claude API key
+OPENAI_API_KEY=sk-...             # OpenAI API key
+OPENAI_MODEL={{OPENAI_MODEL}}     # Model chosen for the app
+ANTHROPIC_API_KEY=sk-ant-...      # Claude API key, if using Claude features
 ```
+
+Claude-specific workflow prompts remain available in `CLAUDE.md` and `.claude/commands/`.
 
 ---
 
-## 6. Available Commands
+## 6. Available Codex Prompts
 
-| Command | Purpose |
+| Prompt file | Purpose |
 |---|---|
-| `/project:cto` | Activate CTO role — architecture & planning |
-| `/project:dev` | Activate DEV role — implementation |
-| `/project:qa` | Activate QA role — testing & quality |
-| `/project:plan` | Force plan mode before complex work |
-| `/project:test` | Run full test suite |
-| `/project:e2e` | Run Playwright E2E browser tests |
+| `.codex/commands/cto.md` | Activate CTO role — architecture & planning |
+| `.codex/commands/dev.md` | Activate DEV role — implementation |
+| `.codex/commands/qa.md` | Activate QA role — testing & quality |
+| `.codex/commands/plan.md` | Force plan-first workflow before complex work |
+| `.codex/commands/test.md` | Run full test suite |
+| `.codex/commands/e2e.md` | Run Playwright E2E browser tests |
 
 ---
 
