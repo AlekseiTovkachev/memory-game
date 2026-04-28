@@ -1,7 +1,36 @@
-# AIcademy Scaffold — AI Vibe Coding Project Template
+# Memory Pairs
 
-> Build software with AI as your coding partner.
-> This template gives your team a structured starting point for Claude and Codex in parallel.
+> A local browser memory pairs game for casual players, built with React, Vite, and TypeScript.
+
+## Quick Start
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+## Commands
+
+```bash
+npm run dev       # Start the Vite dev server
+npm run build     # Type-check and build
+npm run test      # Unit and component tests
+npm run e2e       # Playwright browser tests
+npm run smoke     # Build, unit tests, and E2E tests
+```
+
+## Project Docs
+
+- `docs/PRD.md` — product scope and acceptance criteria
+- `docs/ARCHITECTURE.md` — frontend-only architecture
+- `docs/DECISIONS.md` — technical decision log
+- `docs/ui/UI_KIT.md` — design tokens
+
+---
+
+# AIcademy Scaffold Notes
 
 ---
 

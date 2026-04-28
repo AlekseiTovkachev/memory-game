@@ -1,7 +1,7 @@
-# {{PROJECT_NAME}} — Codex Project Context
+# Memory Pairs — Codex Project Context
 
-> **Stack:** {{TECH_STACK}}
-> **Purpose:** {{PROJECT_DESCRIPTION}}
+> **Stack:** React + Vite + TypeScript
+> **Purpose:** Local browser memory pairs game for casual players
 >
 > This is the Codex project context file.
 > `CLAUDE.md` is the parallel Claude project context file. Keep both in sync when project commands, structure, or standards change.
@@ -12,21 +12,20 @@
 
 | Field | Value |
 |---|---|
-| **Name** | {{PROJECT_NAME}} |
-| **Purpose** | {{PROJECT_DESCRIPTION}} |
+| **Name** | Memory Pairs |
+| **Purpose** | Local browser memory pairs game for casual players |
 | **Current sprint** | Sprint 01 |
-| **Dev port** | {{DEV_PORT}} |
+| **Dev port** | 3000 |
 
 ---
 
 ## 2. Key Commands
 
 ```bash
-# Development — replace with your actual commands
-{{DEV_COMMAND}}                    # Start dev server
-{{BUILD_COMMAND}}                  # Production build
-{{TEST_COMMAND}}                   # Run unit tests
-{{LINT_COMMAND}}                   # Lint / type check
+npm run dev                    # Start dev server
+npm run build                  # Production build and type check
+npm run test                   # Run unit/component tests
+npm run smoke                  # Build, unit tests, and E2E tests
 
 # E2E Testing (Playwright)
 npx playwright test                # Run all E2E tests
@@ -57,7 +56,7 @@ A FEATURE IS "DONE" ONLY WHEN:
 ## 4. Project Structure
 
 ```
-{{PROJECT_NAME}}/
+memory-game/
 ├── CODEX.md                 # Project context for Codex
 ├── CLAUDE.md                # Parallel Claude project context
 ├── AGENTS.md                # Role definitions (CTO, DEV, QA)
@@ -107,12 +106,10 @@ A FEATURE IS "DONE" ONLY WHEN:
 
 ## 5. Environment Variables
 
-Copy `.env.example` → `.env`. Required if the app uses OpenAI:
+The MVP does not require environment variables. Copy `.env.example` → `.env` only if future features add provider integrations.
 
 ```
-OPENAI_API_KEY=sk-...             # OpenAI API key
-OPENAI_MODEL={{OPENAI_MODEL}}     # Model chosen for the app
-ANTHROPIC_API_KEY=sk-ant-...      # Claude API key, if using Claude features
+# No variables are required for the local-only MVP.
 ```
 
 Claude-specific workflow prompts remain available in `CLAUDE.md` and `.claude/commands/`.

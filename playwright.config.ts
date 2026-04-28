@@ -58,11 +58,10 @@ export default defineConfig({
   ],
 
   // Auto-start dev server before tests
-  // Uncomment and update for your project:
-  // webServer: {
-  //   command: "npm run dev",
-  //   port: 3000,
-  //   reuseExistingServer: !process.env.CI,
-  //   timeout: 120_000,
-  // },
+  webServer: {
+    command: "npm run dev -- --host 127.0.0.1 --port 3000",
+    port: 3000,
+    reuseExistingServer: !process.env.CI,
+    timeout: 120_000,
+  },
 });

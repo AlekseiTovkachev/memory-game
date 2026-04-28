@@ -9,15 +9,15 @@
 
 | Token | Value | Usage |
 |-------|-------|-------|
-| `--color-primary` | `{{HEX}}` | Buttons, links, active states |
-| `--color-secondary` | `{{HEX}}` | Secondary actions, accents |
-| `--color-background` | `{{HEX}}` | Page background |
-| `--color-surface` | `{{HEX}}` | Cards, panels |
-| `--color-text` | `{{HEX}}` | Body text |
-| `--color-text-muted` | `{{HEX}}` | Secondary text |
-| `--color-success` | `#22c55e` | Success states |
-| `--color-warning` | `#f59e0b` | Warning states |
-| `--color-danger` | `#ef4444` | Error states, destructive actions |
+| `--color-primary` | `#2563eb` | Buttons, links, active states |
+| `--color-secondary` | `#db2777` | Secondary actions, accents |
+| `--color-background` | `#f8fafc` | Page background |
+| `--color-surface` | `#ffffff` | Cards, panels |
+| `--color-text` | `#111827` | Body text |
+| `--color-text-muted` | `#4b5563` | Secondary text |
+| `--color-success` | `#15803d` | Success states |
+| `--color-warning` | `#b45309` | Warning states |
+| `--color-danger` | `#dc2626` | Error states, destructive actions |
 
 ---
 
@@ -25,8 +25,8 @@
 
 | Token | Value | Usage |
 |-------|-------|-------|
-| `--font-heading` | `{{FONT}}` | Headings (h1–h6) |
-| `--font-body` | `{{FONT}}` | Body text, paragraphs |
+| `--font-heading` | `Inter, ui-sans-serif, system-ui, sans-serif` | Headings (h1–h6) |
+| `--font-body` | `Inter, ui-sans-serif, system-ui, sans-serif` | Body text, paragraphs |
 | `--font-mono` | `monospace` | Code, technical values |
 
 ### Scale
