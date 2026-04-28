@@ -6,7 +6,7 @@
 
 ```
 sprint_XX/
-├── sprint_XX_index.md         # Sprint goals, status, timeline
+├── sprint_XX_index.md         # Sprint goals, status, token budget
 ├── todo/
 │   └── sprint_XX_todo.md      # Task list with acceptance criteria
 ├── reports/
@@ -18,11 +18,21 @@ sprint_XX/
 ## Workflow
 
 1. **CTO** creates the sprint folder and fills in `sprint_XX_index.md`
-2. **CTO** breaks PRD features into tasks in `todo/sprint_XX_todo.md`
-3. **DEV** works through tasks, checking them off
-4. **QA** verifies completed tasks
-5. **DEV/QA** write the sprint report
-6. **Team** does a brief review / retro
+2. **CTO** sets a token budget and a token guardrail for the sprint
+3. **CTO** breaks PRD features into tasks in `todo/sprint_XX_todo.md`
+4. **DEV** works through tasks, checking them off
+5. **QA** verifies completed tasks
+6. **DEV/QA** write the sprint report
+7. **Team** does a brief review / retro
+
+## Token-Based Sprinting
+
+Sprints are sized by AI execution budget, not by calendar duration.
+
+- Set a target token budget for each sprint
+- Set a guardrail where the team must stop and re-scope
+- Budget separately for planning, implementation, testing, and documentation
+- If a task threatens the budget, split it or move it to the next sprint
 
 ## Naming Convention
 
